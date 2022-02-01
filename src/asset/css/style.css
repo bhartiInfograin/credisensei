@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300&family=Bitter&display=swap');
+
+body{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif; 
+}
+
+/* ------------ header------------------ */
+.headerlogo{
+    width: 258px;
+    height: auto;
+    margin-right: 14px;
+
+} 
+
+ .navbarcontainer{
+    box-shadow: 5px 10px 18px #88888880; 
+ }
+
+.navlink{
+    margin: 13px;
+  
+}
+
+
+
+.loginBtn{
+    margin: 13px;
+    margin-right: 4px; 
+}
+.signupBtn{
+    margin: 13px;
+    margin-left: 8px;
+  
+}
+.navbarBrand{
+    font-size: 27px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width:320px) and (max-width:554px){
+    .headerlogo{
+    width: 202px;
+    height: auto;
+    margin-right: 14px;
+    }
+
+}
+
+/* ----------------------footer----------------- */
+.footer_logo{
+    width: 258px;
+    height: auto;
+}
+.footer_content{
+    font-size: 14px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif; 
+   
+}
+.footercol2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif; 
+
+}
+.footercompanylist{
+    list-style: none;
+}
+.footercompanylist li{
+    padding: 3px
+}
+
+.companyHeading{
+    font-size: 22px;
+   text-transform: uppercase;
+}
+
+.socialicon{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;    
+    padding: 0px 0px 0px 0px;  
+}
+.socialicon li{
+    margin:12px;
+    color: #a8d8da;
+}
+.socialtext{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;  
+    /* color: white; */
+    padding: 0px 0px 0px 0px; 
+}
+.socialtext li{
+    margin: 12px;
+}
+
+
+/*------------- media query for footer------------ */
+ /* .footercol1{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+}  */
+ /* .footercol2{
+  
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+   
+}  */
+/* .companyHeading{
+    font-size: 14px;
+    text-transform: uppercase;
+} */
+/* .footercompanylist{
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+} */
+
+/* .socialicon{
+    list-style: none;
+    font-size: 17px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0px 0px 0px 0px;    
+} */
+/* .socialicon li{
+    margin:12px;
+    color: #a8d8da;
+} */
+/* .socialtext{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;  
+    color: white;
+    padding: 0px 0px 0px 0px;  
+} */
+/* .socialtext li{
+    margin: 8px;
+} */
+
+/* ----------------------------------header----------------------------------- */
+.homeheader{
+    background-image: url(../image/background.png);
+    height: 700px;
+    width: 100%;
+}
+.homesectionImg{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+}
+.homeImg{
+    height: 447px;
+    width: 447px;
+    border: solid 14px white;
+    border-radius: 50%;
+}
+.homecontent{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+.homeline{
+    height: 12px;
+    width: 420px;
+    background-color:#a8d8da;
+}
+.homebutton{
+    width: 128px;
+    padding: 10px;
+    margin-top: 17px;
+}
+
+/*----------------------- media query of header section------------------------------------ */
+ @media (min-width:320px) and (max-width:554px){
+    .homeheader{
+        background-image: url(../image/background.png);
+        height: 700px;
+        width: 100%;   
+    }
+  
+    .homesectionImg{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+     .homeImg{
+        height: auto;
+        width: 279px;
+        border: solid 14px white;
+        border-radius: 50%;
+    }
+    .homecontent{
+        font-family: 'Anton', sans-serif;
+        font-family: 'Barlow', sans-serif;
+        font-family: 'Bitter', serif;
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .hometitle{
+        line-height: 39px;
+        font-size: 18px;
+     }
+    .homeline{
+        height: 9px;
+        width: 225px;
+        background-color: #333333;
+    }
+    .homebutton{
+        width: 132px;
+        padding: 8px;
+        margin-top: 15px;
+    }
+   
+} 
+    
+
+/* ------------------------Modul------------------------- */
+.modul_title{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    margin-top: 82px;
+}
+.modul_text{
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    margin-top: 15px;
+}
+.account_feature{
+    list-style: none;   
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 0px 102px 0px 102px;
+    
+}
+.account_feature li{
+    flex: 0 0 25%;
+    padding: 14px;
+    font-size: 18px;
+    
+    
+}
+
+.modul_check{
+    color:#a8d8da;
+    font-size: 27px;
+    margin-right: 12px;
+}
+.smartmodule_img{
+    padding: 12px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.disputeimage{
+    width: 400px;
+    height: auto;
+}
+.item_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 73px;  
+  font-family: 'Anton', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Bitter', serif; 
+}
+.item_text{
+    font-style: italic;
+    color: gray;
+    margin-top: 15px; 
+
+}
+.item_title{
+    font-family: 'Anton', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Bitter', serif; 
+}
+.item_text_item_reverse{
+       text-align: justify;
+       font-family: 'Anton', sans-serif;
+       font-family: 'Barlow', sans-serif;
+       font-family: 'Bitter', serif;
+}
+.item_reverse{
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Bitter', serif;
+}
+
+/*--------------------- creditscore------------- */
+.creditscore_main{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+   
+}
+.creditscore_heading{
+    margin-bottom: 24px;
+}
+.creditscore_card{
+    /* width: 376px; */
+    text-align: center;
+    padding: 12px;
+    background-color:#a8d8da ;
+    border:1px solid  #d3d3d252;
+    
+  
+  
+}
+
+.credirscore_card_count{
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    color: black;
+    background-color:white ;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    box-shadow: 5px 10px 18px #88888880;
+}
+.card_text{
+  text-align: justify;  
+  font-family: 'Anton', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Bitter', serif
+
+}
+.card:hover{
+    /* transform: scale(1.1);    */
+    box-shadow: 5px 10px 18px #88888880;  
+    color: white; 
+}
+
+/*---------------- contactus------------ */
+.contact_box1{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;  
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+}
+.contact_box1_heading{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+}
+
+.contactus_form{
+    padding: 15px;   
+}
+.contactus_heading{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    text-align: center;
+}
+.steetview{
+    font-size: 26px;
+    margin: 12px;
+}
+.mail{
+    font-size: 26px;
+    margin: 12px;
+}
+.phone{
+    font-size: 26px;
+    margin: 12px;
+}
+
+/*---------------- How it work---------- */
+.how_it_work_head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+    height: 500px;
+    width: auto;
+}
+.work{
+    padding: 12px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bitter', serif;
+}
+.work_count{
+    height: 48px;
+    width: 48px;
+    background-color: #a8d8da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+/*---------------------- Pricing------------------------- */
+.pricing_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+/*----------------- signup ----------------- */
+.singupform{
+    background-color:#a8d8da;
+    display: flex;
+    font-family: 'Anton', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Bitter', serif;
+    
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    height: 600px;
+     /* box-shadow: 5px 10px 18px #88888880;  */
+}
+.progressbar{
+    height: 12px;
+    width: 100%;
+    background-color: blue;
+}
+.sigup_form{
+    height: 600px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    /* box-shadow: 5px 10px 18px #88888880;  */
+}
+.signBtn{
+    width: 113px;
+}
