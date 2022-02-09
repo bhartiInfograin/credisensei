@@ -1,53 +1,77 @@
 import React from 'react';
-import { Container, Row, Col ,Table, Button} from 'react-bootstrap';
+import { Container, Row, Col, Table, Button } from 'react-bootstrap';
+import { Zoom} from "react-awesome-reveal";
+import {Link} from "react-router-dom";
 
 export default function Price_Table() {
     return (
-        <>
-            <Container>
+        <> 
+        <section className='mt-5 p-3' >
+        <Container>
                 <Row>
                     <Col lg={12}>
-                        <h3>Out with the old…in with Credit Sensei</h3>
-                        <p>Big credit repair companies are better at deleting dollars from your pocket than negative accounts from your credit report. That’s why we
-                            created Credit Sensei.</p>
+                        <div className='pricing_sec2_header '>
+                            <h3>Out with the old…in with Credit Sensei</h3>
+                            <p className='sec2_content'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur odio dolorum obcaecati ipsa, fugit natus perferendis earum alias totam placeat, similique rerum maxime. Alias dicta dolorum amet officiis numquam?
+                                </p>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col lg={12}>
-                        <Table striped bordered hover>
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Lexington law</th>
-                                    <th>Lexington law</th>
-                                    <th>creditrepair.com</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td colSpan={2}>Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </Table>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <Button>Get Started</Button>
+                        <div className='sec2_table'>
+                            <Zoom>
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Lexington law</th>
+                                        <th>Lexington law</th>
+                                        <th>creditrepair.com</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className='table_count'>Cost</td>
+                                        <td>Free w/3 bureaos
+                                            sunscription</td>
+                                        <td> $12-$19per month</td>
+                                        <td>$99
+                                            per month</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='table_count'>Dispute per month</td>
+                                        <td>Unlimited</td>
+                                        <td>2-3</td>
+                                        <td>2-3</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='table_count'>Bureauos can ignore disputes</td>
+                                        <td>No</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='table_count'>Video credit coaching</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                            </Zoom>
+                        </div>
+                    <div className='sec2_button mt-5'>
+
+                    <Link to="/createAccount" className='navmenubutton'><Button className='btn-dark tablebutton' >Get Started</Button></Link>    
+                    </div>
+                      
                     </Col>
                 </Row>
             </Container>
+        </section>
+          
         </>
     )
 }

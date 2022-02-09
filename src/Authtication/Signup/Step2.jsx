@@ -4,7 +4,7 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 
-export default function Step2() {
+export default function Step2(props) {
 
   const steps = [
     'CREATE ACCOUNT',
@@ -13,10 +13,10 @@ export default function Step2() {
   ];
   return (
     <>
-     <Box sx={{ width: '100%' }} >
-     <Stepper activeStep={0} alternativeLabel>
+     <Box sx={{ p:2, width: '100%' }} >
+     <Stepper activeStep={props.progress} alternativeLabel>
         {steps.map((label) => (
-          <Step key={label}>
+          <Step key={label} >
             <StepLabel>{label}</StepLabel>
           </Step>
         ))}

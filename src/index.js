@@ -11,3 +11,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+// basename='/credit_sensei/'

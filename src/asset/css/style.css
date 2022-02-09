@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bitter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300&family=Bitter&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300&family=Bitter&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 body{
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ------------ header------------------ */
 .headerlogo{
-    width: 258px;
+    width: 218px;
     height: auto;
     margin-right: 14px;
-
 } 
 
  .navbarcontainer{
@@ -20,24 +19,39 @@ body{
 
 .navlink{
     margin: 13px;
-  
 }
-
-
+.navmenu{
+    color: #333333;
+    font-size: 16px;
+    text-decoration: none;
+}
+.navmenu:hover{
+    color: #333333;
+    font-size: 16px;
+}
+.navmenubutton{
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navmenubutton:hover{
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
 
 .loginBtn{
     margin: 13px;
     margin-right: 4px; 
+    width: 109px;
 }
 .signupBtn{
     margin: 13px;
     margin-left: 8px;
-  
+    width: 109px; 
 }
 .navbarBrand{
     font-size: 27px;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,36 +68,45 @@ body{
 
 /* ----------------------footer----------------- */
 .footer_logo{
-    width: 258px;
+    width: 191px;
     height: auto;
 }
 .footer_content{
     font-size: 14px;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif; 
-   
+    text-align: justify;   
 }
 .footercol2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif; 
+}
+.footercol2 p {
+    font-size: 14px;
+}
+.footerProduct{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.footericon{
+    font-size: 12px;
+    margin-right: 6px;
 }
 .footercompanylist{
-    list-style: none;
+    list-style: square;
+    font-size: 14px;
 }
 .footercompanylist li{
     padding: 3px
 }
 
 .companyHeading{
-    font-size: 22px;
-   text-transform: uppercase;
+    font-size: 14px;
+    text-transform: uppercase;
 }
-
 .socialicon{
     list-style: none;
     display: flex;
@@ -93,85 +116,33 @@ body{
     padding: 0px 0px 0px 0px;  
 }
 .socialicon li{
-    margin:12px;
-    color: #a8d8da;
+    margin-right: 12px;
+    color: #8db9bb;
+    font-size: 18px;
 }
 .socialtext{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;  
-    /* color: white; */
+    font-size: 12px;  
     padding: 0px 0px 0px 0px; 
+    
 }
-.socialtext li{
-    margin: 12px;
+.socialtext li {
+    margin-left: 12px;
 }
-
 
 /*------------- media query for footer------------ */
- /* .footercol1{
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 27px;
-}  */
- /* .footercol2{
-  
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 27px;
-   
-}  */
-/* .companyHeading{
-    font-size: 14px;
-    text-transform: uppercase;
-} */
-/* .footercompanylist{
-    margin: 0;
-    padding: 0;
-    font-size: 11px;
-} */
-
-/* .socialicon{
-    list-style: none;
-    font-size: 17px; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 0px 0px 0px 0px;    
-} */
-/* .socialicon li{
-    margin:12px;
-    color: #a8d8da;
-} */
-/* .socialtext{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 7px;  
-    color: white;
-    padding: 0px 0px 0px 0px;  
-} */
-/* .socialtext li{
-    margin: 8px;
-} */
-
+ 
 /* ----------------------------------header----------------------------------- */
 .homeheader{
     background-image: url(../image/background.png);
-    height: 700px;
+    height: 527px;
     width: 100%;
 }
 .homesectionImg{
-    height: 700px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,16 +153,13 @@ body{
     width: 447px;
     border: solid 14px white;
     border-radius: 50%;
+     
 }
 .homecontent{
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-    height: 700px;
+    height: 529px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-     
+    justify-content: center;  
 }
 
 .homeline{
@@ -227,9 +195,6 @@ body{
         border-radius: 50%;
     }
     .homecontent{
-        font-family: 'Anton', sans-serif;
-        font-family: 'Barlow', sans-serif;
-        font-family: 'Bitter', serif;
         height: 195px;
         display: flex;
         flex-direction: column;
@@ -253,17 +218,12 @@ body{
    
 } 
     
-
 /* ------------------------Modul------------------------- */
-.modul_title{
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-    margin-top: 82px;
+.modul_header{
+ margin-top: 29px;
 }
 .modul_text{
-    font-size: 20px;
-    font-style: italic;
+    font-size: 16px;
     color: gray;
     margin-top: 15px;
 }
@@ -277,82 +237,57 @@ body{
 .account_feature li{
     flex: 0 0 25%;
     padding: 14px;
-    font-size: 18px;
-    
-    
+    font-size: 14px; 
 }
-
+.module{
+  text-align: center;
+}
 .modul_check{
     color:#a8d8da;
-    font-size: 27px;
+    font-size: 20px;
     margin-right: 12px;
 }
 .smartmodule_img{
-    padding: 12px;
-    display: flex ;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding: 27px;
 }
 .disputeimage{
-    width: 400px;
+    width: 450px;
     height: auto;
+    box-shadow: 5px 10px 18px #88888880;    
 }
 .item_content{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 73px;  
-  font-family: 'Anton', sans-serif;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Bitter', serif; 
+    justify-content: flex-start;
+    padding: 27px;
+    text-align: justify;
 }
 .item_text{
-    font-style: italic;
     color: gray;
-    margin-top: 15px; 
+}
 
-}
-.item_title{
-    font-family: 'Anton', sans-serif;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Bitter', serif; 
-}
 .item_text_item_reverse{
-       text-align: justify;
-       font-family: 'Anton', sans-serif;
-       font-family: 'Barlow', sans-serif;
-       font-family: 'Bitter', serif;
+     text-align: justify;  
 }
 .item_reverse{
   text-align: center;
-  font-family: 'Anton', sans-serif;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Bitter', serif;
 }
 
 /*--------------------- creditscore------------- */
 .creditscore_main{
     text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-   
-}
-.creditscore_heading{
-    margin-bottom: 24px;
+    margin-top: 40px;   
 }
 .creditscore_card{
-    /* width: 376px; */
     text-align: center;
-    padding: 12px;
     background-color:#a8d8da ;
     border:1px solid  #d3d3d252;
-    
-  
-  
+    margin-top: 23px; 
+    padding: 9px;
 }
-
 .credirscore_card_count{
     width: 82px;
     height: 82px;
@@ -365,22 +300,25 @@ body{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
     box-shadow: 5px 10px 18px #88888880;
 }
 .card_text{
   text-align: justify;  
-  font-family: 'Anton', sans-serif;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Bitter', serif
-
 }
 .card:hover{
-    /* transform: scale(1.1);    */
-    box-shadow: 5px 10px 18px #88888880;  
-    color: white; 
+    box-shadow: 5px 10px 18px #88888880;   
+}
+
+/*-------- smartmodule------------ */
+.smart_item_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 27px;    
+}
+.smart_item_text{
+    text-align: justify;
+    color: gray;   
 }
 
 /*---------------- contactus------------ */
@@ -389,25 +327,16 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;  
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-}
-.contact_box1_heading{
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
+    padding: 24px;
+    padding-left: 16px;
 }
 
 .contactus_form{
-    padding: 15px;   
+    padding: 24px;
 }
 .contactus_heading{
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
     text-align: center;
+    margin-top: 26px;
 }
 .steetview{
     font-size: 26px;
@@ -424,21 +353,52 @@ body{
 
 /*---------------- How it work---------- */
 .how_it_work_head{
+    height: 527px;
+    width: 100%;
+    background-image: url(../image/web-bg.png)
+}
+
+.how_it_work_head_img{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+}
+.work_head_content{
+    height: 529px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
-    height: 500px;
-    width: auto;
 }
+.work_head_content p{
+     text-align: center;
+}
+.girlImg{
+    height: 439px;
+    width: 439px;
+    border: solid 14px white;
+    border-radius: 50%;
+}
+
 .work{
-    padding: 12px;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Bitter', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 332px;
+    padding: 39px;  
+}
+.work_main{
+ margin-top: 12px;
+}
+.work_heading{
+    margin-top: 17px;
+}
+.work_content{
+    text-align:justify;
+    color: gray;
 }
 .work_count{
     height: 48px;
@@ -450,29 +410,140 @@ body{
     border-radius: 50%;
     font-size: 25px;
 }
-
 /*---------------------- Pricing------------------------- */
-.pricing_img{
+.pricing_hero{
+    height: 527px;
+    width: 100%;
+    background-image: linear-gradient( #a8d8da , white); 
+}
+.pricing_hero_content{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+   flex-direction: column;
+    height: 527px;
+    width: 100%;   
+}  
+.pricing_hero_content p{
+    text-align: justify;
+    width: 695px;
 }
 
+.letterImg{
+   height: auto;
+   width: 100%;
+}
+.pricing_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 374px;
+}
+.pricing_content p{
+     color: gray;
+}
+.pricing_sec2_header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.sec2_content{
+   text-align: center;
+   font-size: 15px;
+   color: gray;
+ 
+}
+.sec2_table{
+box-shadow: 5px 10px 18px #88888880;
+}
+.sec2_table thead tr th {
+    padding: 19px;
+}
+.sec2_table tbody tr td {
+    padding: 19px;
+}
+.tablebutton{
+    width: 127px;
+}
+
+.table_count{
+    background-color:#a8d8da ;
+}
+.sec2_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.basiccard{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pricing_plan{
+   width: 348px;
+    box-shadow: 5px 10px 18px #88888880;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 11px;
+    background-color: #caebed; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#caebed, white);
+}
+.pricing_plan h5{
+    margin-top: 10px;
+}
+.pricing_plan hr {
+    height: 3px;
+    width: 100%;
+    background-color:#a8d8da;    
+}
+.pricing_plan  line p{
+    font-size: 14px;
+    margin-top: 10px;     
+}
+.subprice{
+    line-height: 12px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.pricing_plan ul{
+    font-size: 14px;
+}
+.pricing_plan ul li {
+list-style: none;
+}
+.checkicon{
+    margin-right: 10px;
+    color: #61abae;
+    font-size: 17px;
+}
+.cardtext{
+    font-size: 14px;
+}
+
+.basicprimimum{
+    display: flex;
+    justify-content: flex-start;
+}
 /*----------------- signup ----------------- */
 .singupform{
     background-color:#a8d8da;
     display: flex;
-    font-family: 'Anton', sans-serif;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Bitter', serif;
-    
     justify-content: center;
     flex-direction: column;
     padding: 30px;
     height: 600px;
-     /* box-shadow: 5px 10px 18px #88888880;  */
+    box-shadow: 5px 10px 18px #88888880; 
 }
+.formcontainer{
+     box-shadow: 5px 10px 18px #88888880; 
+}
+
 .progressbar{
     height: 12px;
     width: 100%;
@@ -484,8 +555,481 @@ body{
     padding: 30px;
     justify-content: center;
     flex-direction: column;
-    /* box-shadow: 5px 10px 18px #88888880;  */
+    background-color: white;
 }
 .signBtn{
     width: 113px;
 }
+
+/* Creditreport */
+.creditreportmain{
+    box-shadow: 5px 10px 18px #88888880; 
+  
+}
+
+.creditReport_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 39px;
+}
+.creditReport_content p {
+    font-size: 14px;
+}
+.creditReport_sub_head{
+    text-align: center;
+    margin-top: 30px;
+    color:#4f9b9f ;   
+}
+
+/*------------ login form----- */
+.mainform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.Login_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
+    width: 100%;
+    padding: 49px;
+    box-shadow: 5px 10px 18px #88888880;   
+}
+.forgotpwd{
+    color:#4f9b9f;
+    font-size: 14px;
+}
+.forgotpwd:hover{
+    color:#4f9b9f;
+    font-size: 14px;
+}
+.fromlabel{
+   align-self: flex-start;
+}
+
+/*------------- verifyreport----------- */
+.personaldeatails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid gray ;
+    padding: 36px;
+}
+
+.creditReport_content h3{
+    color:#4f9b9f;
+}
+
+.verify_pricing_plan {
+    height: auto;
+    width: 397px;
+    margin: 20px;
+    box-shadow: 5px 10px 18px #88888880;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 35px;
+    background-color: #caebed;
+    background-image: linear-gradient(#caebed, white);
+}
+.verifybutton{
+    display: flex;
+    justify-content: end;
+}
+.Identity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid gray ;
+    padding: 36px;
+    width: 423px;
+}
+.acctivate_msg{
+    width: 703px;
+    text-align: center;
+    margin-top: 16px;
+}
+.activateBtn{
+    background-color:#caebed ;
+    width: 308px;
+    border: none;
+}
+.activate_content{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 39px;
+}
+.unlink {
+    margin-top: 23px;
+    color:#4b7a7c;
+    font-weight: bold;
+}
+.activate_content hr{
+     width: 30px;
+     color: black;
+     width: 332px;
+
+}
+.usericon{
+    font-size: 42px;
+    margin: 13px;
+    color:#4b7a7c;
+}
+.userHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.usename_modal h5{
+   font-size: 18px;
+   text-align: center;
+}
+.usename_modal{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.usename_modal_btn{
+    width: 167px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.usename_modal1_btn{
+    width: 312px;
+    margin-top: 12px;
+}
+
+.usename_modal h6{
+    font-size: 13px;
+ }
+.graph{
+   display: flex;
+   flex-direction: row;
+   background-color:#d3d3d252;
+   margin-top: 37px;
+}
+
+.transunion{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.experian{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.equifax{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.experian p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.graph h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.sec_provider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec_provider h1{
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+.section__content {
+    padding: 19px;
+}
+.table--provider {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+}
+.table--provider td label {
+    color: #c2c2c2;
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+}
+.creditItems_sectionContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.creditItems_sectionContent h1{
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+
+.creditItems_sectionContent ul{
+    border: none;
+    margin-left: auto;
+}
+.creditItems_sectionContent ul li a{
+     font-weight: bold;
+}
+
+.creditItems_sectionContent ul li a:hover{
+    border-color:#fff !important;
+    font-weight: bold !important;
+    color:#4b7a7c !important;
+    border-bottom: 4px solid #4b7a7c !important;
+}
+.creditItems_sectionContent ul li a{
+    border-color:#fff !important;
+    font-weight: bold !important;
+    color:#4b7a7c !important;
+    border-bottom: 4px solid white !important;
+}
+.creditItems_sectionContent ul li a.active{
+    border-color:#fff !important;
+    font-weight: bold !important;
+    color:#4b7a7c !important;
+    border-bottom: 4px solid #4b7a7c !important;
+}
+.crditItemtable{
+    padding: 5px 33px 0px 33px;
+}
+.personal_offer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;   
+}
+
+.personal_offer h1{
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+.myaccount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myaccount h1{
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+.personaloffer_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.cardimg{
+    height: 176px;
+    width: auto;
+}
+.personaloffer_card h3{
+    color: #4b7a7c;
+    font-size: 22px;
+    margin-top: 12px;
+}
+.myaccount_user{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    height: 100%;
+}
+.myaccount_user ul li{
+    padding: 8px 0px 8px 0px;
+    list-style: circle;
+}
+.username{
+    font-size: 22px;
+    list-style: none !important;
+}
+
+/*----------------------- CreditItem-------------------- --------*/
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+.filters p {
+    font-weight: bold;
+    color: #4a4a4a;
+    text-transform: uppercase;  
+}
+.accountStatus{
+    border-bottom: 1px solid #e1e1e1;
+}
+.accountStatus ul li{
+    list-style: none;
+}
+.Dispute_Status{
+ margin-top: 12px;
+}
+.accordianspan{
+    background-color: #e1e1e1;
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 6px;
+    margin: 6px;
+}
+.accountStatus p{
+    color: #c2c2c2;
+}
+.Dispute_Status p{
+    color: #c2c2c2;
+}
+.Dispute_Status ul li{
+    list-style: none;
+}
+/*------------- -------DisputeLetter--------- */
+.disputeletter_btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*---------------------- History----------------- */
+.histroy_title h1{
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+.history_sec2_titile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    margin-top: 19px;
+}
+.history_sec2_img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+  
+}
+.graphimg{
+    height: auto;
+    width: 994px;
+   
+}
+.graph_content {
+    position: absolute;
+    top: 31%;
+    width: 31%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #dadbd985;
+    padding: 31px;
+}
+.history_sec3_title h1{
+    margin: 0;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+.history_sec3_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px  85px 0px 85px;
+    margin-top: 12px;
+    border: 1px solid #80808038;
+   
+}
+.dropdown-menu{
+    margin:-64px
+}
+
+.profileDropdown .dropdown-toggle::after{
+    border-right: none;
+    border-left: none;
+}
+  
+.profileDropdown .dropdown-menu{
+    transform: translateX(-69px);
+}
+.terms_condition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 57px;
+
+}
+.terms_condition h1{
+    font-size: 27px;
+}
+  
+.terms_condition p{
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+/*--------------- mydoc--------------- */
+.photoid{
+    margin: 12px;
+    border: 1px solid #80808030;
+    padding: 12px;
+}
+.photoid h1{
+    font-size: 16px;
+}
+.triagel{
+    font-size: 18px;
+    color: yellow;
+}
+.photoid a{
+    margin-left: 12px;
+}
+.attachfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    height: 180px;
+}
+.attachfile h1{
+    font-size: 16px;
+}
+.attachfile span{
+    margin-bottom: 12px;
+}
+
+#out {
+    margin-top: 34px;
+  }
+
+

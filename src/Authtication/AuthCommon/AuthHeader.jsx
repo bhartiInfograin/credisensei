@@ -1,26 +1,27 @@
 import React from 'react';
 import { Navbar, Container } from 'react-bootstrap'
 import logo from '../../asset/image/creditsensei.png';
+import {Link} from 'react-router-dom'
 
-export default function AuthHeader() {
+
+export default function AuthHeader(props) {
     return (
         <>
-            <Navbar>
-                <Container fluid>
+           <Navbar  className='navbarcontainer'  collapseOnSelect expand="lg" bg="light" variant="light" sticky="top" >
+                <Container fluid >
                     <Navbar.Brand href="#home">
                         <div className='navbarBrand'>
-                            <img src={logo} className="d-inline-block align-top headerlogo " />
-
+                        <Link to = "/" className='navmenubutton'><img src={logo} className="d-inline-block align-top headerlogo " /></Link>
                         </div>
-                    </Navbar.Brand>
+                    </Navbar.Brand> 
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
-                            Already a member ? <a href="#login">Login</a>
+                        {props.text} <a href={props.url}>{props.action }</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+            </ Navbar >
         </>
     )
 }
